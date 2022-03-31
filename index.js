@@ -170,3 +170,18 @@ let multConReduce = numeros.reduce( (acc,c)=> (acc * c)/4,1 )
 console.log(multConReduce)
 
 console.log(Array.isArray(peliculas))
+
+/* Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
+
+That is: removes all dashes, each word after dash becomes uppercased.
+
+Examples:
+
+camelize("background-color") == 'backgroundColor';
+ */
+
+function camelize(str) {
+  return str.split('-').join('')
+}
+
+console.log(camelize('my-short-list'))
