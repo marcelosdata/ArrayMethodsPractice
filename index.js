@@ -185,3 +185,14 @@ function camelize(str) {
 }
 
 console.log(camelize('my-short-list'))
+
+//rest operator
+
+const numeroMax = (...num) => Math.max(...num)
+console.log(numeroMax(5,6,7,8,12,45,0))
+
+const suma3 = (...nums) => nums.reduce((acc,c) => acc + c,0)
+console.log(suma3(6,7,1))
+
+//by using the rest operator i can leave n amount of parameters in the function to be called potentially
+
